@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cleaninghomeactivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/oncedaily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttoncurbe"
+            app:backgroundTint="@null"
+            android:text="Once Daily" />
+
+        <Button
+            android:id="@+id/twicedaily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttondriver"
+            app:backgroundTint="@null"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Twice Daily" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipcooking"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cooking"
+                android:layout_weight="1" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipmopping"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Floor Mopping"
+                android:layout_weight="1" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipdishwashing"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Washing"
+                android:layout_weight="1" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarViewcleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bookcleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttoncurbe"
+        app:backgroundTint="@null"
+        android:text="Continue" />
+</LinearLayout>
+
+</ScrollView>

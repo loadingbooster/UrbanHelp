@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "53349038231",
+    "firebase_url": "https://urbanhelp-54e91-default-rtdb.firebaseio.com",
+    "project_id": "urbanhelp-54e91",
+    "storage_bucket": "urbanhelp-54e91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53349038231:android:708dca74d197f344c851d2",
+        "android_client_info": {
+          "package_name": "com.www.urban.help.vijay.urbanhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53349038231-s818equ8v109e0kprb1gq7tirb2hgn36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.www.urban.help.vijay.urbanhelp",
+            "certificate_hash": "9b47d09c0adc30002bfd8ca970cdd5e7228257b2"
+          }
+        },
+        {
+          "client_id": "53349038231-h4il2fh2dskf418bmfek542s88otpdod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6byds-xqC5l2ey1FfcNDLj71oUQAqzgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53349038231-h4il2fh2dskf418bmfek542s88otpdod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

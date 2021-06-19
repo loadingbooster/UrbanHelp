@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".applianceactivity">
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="APPLIANCES" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/appac"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/aircon1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Air Conditioner" />
+            <ImageButton
+                android:id="@+id/appgeyser"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/geyser1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Geyser" />
+            <ImageButton
+                android:id="@+id/appro"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/ro1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="RO" />
+            <ImageButton
+                android:id="@+id/apptv"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/tv1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="TV" />
+            <ImageButton
+                android:id="@+id/appwashingmachine"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/washingmachine1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Washing Machine" />
+
+            <ImageButton
+                android:id="@+id/appchimney"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/chimney1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Chimney" />
+            
+            <ImageButton
+                android:id="@+id/appmicrowave"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/homeicons"
+                app:srcCompat="@drawable/microwave" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Microwave" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

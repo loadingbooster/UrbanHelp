@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".waterpurifieractivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="AIR CONDITIONER" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/homeicons"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/roinstall" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:text="RO INSTALL/UNISTALL" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/homeicons"
+            app:srcCompat="@drawable/roqualitytest" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:text="WATER QUALITY TEST" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/homeicons"
+            app:srcCompat="@drawable/rorepair" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:text="RO REPAIR" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/homeicons"
+            app:srcCompat="@drawable/roserivce" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="RO SERVICE" />
+    </LinearLayout>
+
+</LinearLayout>
