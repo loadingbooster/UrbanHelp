@@ -71,7 +71,7 @@ public class cleaninghomeactivity extends AppCompatActivity {
         chipcooking.setOnCloseIconClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int cooking=0;
+                int cooking;
                 if(chipcooking.isChecked()){
                     cooking = 1;
                 }
