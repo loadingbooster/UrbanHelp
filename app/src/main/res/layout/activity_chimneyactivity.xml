@@ -17,7 +17,7 @@
         android:text="Chimney" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/wallmountchimney"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitCenter"
@@ -35,7 +35,7 @@
         android:text="Wall Mounted Chimney" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/islandchimney"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitCenter"

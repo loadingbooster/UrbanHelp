@@ -2,8 +2,11 @@ package com.www.urban.help.vijay.urbanhelp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -38,6 +41,18 @@ public class loginactivity extends AppCompatActivity {
         phonenumber = findViewById(R.id.phonenumberfield);
         loginsignup.setVisibility(View.INVISIBLE);
         DatabaseReference myref = database.getReference();
+
+        boolean foreground = ActivityCompat.checkSelfPermission(loginactivity.this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+
+        if (foreground) {
+            Toast.makeText(loginactivity.this, "GRANTED", Toast.LENGTH_SHORT).show();
+
+
+        } else {
+            ActivityCompat.requestPermissions(loginactivity.this,
+                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 101);
+        }
 
         phonenumber.addTextChangedListener(new TextWatcher() {
             @Override

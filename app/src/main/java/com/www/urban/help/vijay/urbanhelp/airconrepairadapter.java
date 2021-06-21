@@ -19,15 +19,17 @@ import java.util.ArrayList;
 
 public class airconrepairadapter extends RecyclerView.Adapter<airconrepairadapter.ViewHolderairconrepair>{
 
-    private ArrayList<String> airconrepairnamelist = new ArrayList<>();
-    private ArrayList<String> airconrepairpricelist = new ArrayList<>();
-    private ArrayList<String> airconrepairratinglist = new ArrayList<>();
+    private ArrayList<String> sellernamelist = new ArrayList<>();
+    private ArrayList<String> sellerrpricelist = new ArrayList<>();
+    private ArrayList<String> sellerratinglist = new ArrayList<>();
+    private ArrayList<String> sellerphonelist;
     private Context airconrepaircontext;
 
-    public airconrepairadapter(ArrayList<String> airconrepairnamelist, ArrayList<String> airconrepairpricelist, ArrayList<String> airconrepairratinglist, Context context) {
-        this.airconrepairnamelist = airconrepairnamelist;
-        this.airconrepairpricelist = airconrepairpricelist;
-        this.airconrepairratinglist = airconrepairratinglist;
+    public airconrepairadapter(ArrayList<String> namelist, ArrayList<String> pricelist, ArrayList<String> ratinglist, ArrayList<String> phonelist,Context context) {
+        this.sellernamelist = namelist;
+        this.sellerrpricelist = pricelist;
+        this.sellerratinglist = ratinglist;
+        this.sellerphonelist = phonelist;
         airconrepaircontext = context;
     }
 
@@ -41,20 +43,20 @@ public class airconrepairadapter extends RecyclerView.Adapter<airconrepairadapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderairconrepair holder, int position) {
-        holder.airconrepairseller.setText(airconrepairnamelist.get(position));
-        holder.airconrepairprice.setText(airconrepairpricelist.get(position));
-        holder.airconrepairrating.setText(airconrepairratinglist.get(position));
+        holder.airconrepairseller.setText(sellernamelist.get(position));
+        holder.airconrepairprice.setText(sellerrpricelist.get(position));
+        holder.airconrepairrating.setText(sellerratinglist.get(position));
         holder.airconbookrepair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(airconrepaircontext, airconrepairnamelist.get(position), Toast.LENGTH_SHORT).show();
+                Toast.makeText(airconrepaircontext, sellernamelist.get(position), Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return airconrepairnamelist.size();
+        return sellernamelist.size();
     }
 
     public class ViewHolderairconrepair extends RecyclerView.ViewHolder{

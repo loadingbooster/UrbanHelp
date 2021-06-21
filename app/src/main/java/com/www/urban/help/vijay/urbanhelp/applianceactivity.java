@@ -63,6 +63,22 @@ public class applianceactivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(applianceactivity.this,selleractivity.class);
+                intent.putExtra("key","tv");
+                startActivity(intent);
+            }
+        });
+        microwave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(applianceactivity.this,selleractivity.class);
+                intent.putExtra("key","microwave");
+                startActivity(intent);
+            }
+        });
 
     }
 }

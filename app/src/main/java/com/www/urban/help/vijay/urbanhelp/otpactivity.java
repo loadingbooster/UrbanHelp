@@ -24,6 +24,7 @@ import com.google.firebase.FirebaseTooManyRequestsException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
@@ -216,6 +217,8 @@ public class otpactivity extends AppCompatActivity {
             //default mode is PRIVATE, can be APPEND etc.
             fos.write(data.getBytes());
             fos.close();
+            FirebaseUser user = mAuth.getCurrentUser();
+         //   updateUI(user);
             Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(),homescreen.class);
             startActivity(intent);

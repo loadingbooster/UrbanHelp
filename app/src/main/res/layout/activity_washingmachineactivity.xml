@@ -18,7 +18,7 @@
         android:text="Washing Machine" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/washingrepair"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
@@ -36,7 +36,7 @@
         android:text="Repair" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/washingservice"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
@@ -54,7 +54,7 @@
         android:text="Servicing" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/washinginstall"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
