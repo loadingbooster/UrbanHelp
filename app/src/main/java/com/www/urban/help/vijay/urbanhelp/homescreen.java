@@ -75,11 +75,8 @@ public class homescreen extends AppCompatActivity{
         driver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-                //  Intent intent = new Intent(homescreen.this,driveractivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(homescreen.this,driveractivity.class);
+                startActivity(intent);
             }
         });
         plumber.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +107,14 @@ public class homescreen extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(homescreen.this, repairactivity.class);
+                startActivity(intent);
+            }
+        });
+        electrician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(homescreen.this, selleractivity.class);
+                intent.putExtra("key","electrician");
                 startActivity(intent);
             }
         });

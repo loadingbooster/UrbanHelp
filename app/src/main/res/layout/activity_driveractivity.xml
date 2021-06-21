@@ -11,50 +11,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:padding="10dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/oneday"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
+            android:textSize="15sp"
             android:background="@drawable/buttoncurbe"
             app:backgroundTint="@null"
             android:text="One Day" />
 
         <Button
             android:id="@+id/month"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/buttondriver"
             app:backgroundTint="@null"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
+            android:textSize="15sp"
             android:textColor="@color/black"
             android:text="Month" />
 
         <Button
             android:id="@+id/week"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/buttondriver"
             app:backgroundTint="@null"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
+            android:textSize="15sp"
             android:textColor="@color/black"
             android:text="Week" />
     </LinearLayout>
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Include Saturday" />
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

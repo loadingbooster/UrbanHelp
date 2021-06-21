@@ -60,7 +60,7 @@ public class selleractivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     loadbar.setVisibility(View.INVISIBLE);
-                    Log.d("datasnapshotrepair",String.valueOf(snapshot));
+                    Log.d("datasnapshotrepair", String.valueOf(snapshot));
                     Iterator<DataSnapshot> items = snapshot.getChildren().iterator();
                     while (items.hasNext()) {
                         DataSnapshot item = items.next();
@@ -75,11 +75,12 @@ public class selleractivity extends AppCompatActivity {
                     }
                     adapter();
                 }
+
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
                 }
             });
-
+        }
             if (intentmessage.equals("install")) {
                 myref.child("providers/ac").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -105,8 +106,7 @@ public class selleractivity extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError error) {
                     }
                 });
-                Toast.makeText(this, intentmessage, Toast.LENGTH_SHORT).show();
-                            }
+            }
             if (intentmessage.equals("service")) {
                 myref.child("providers/ac").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -131,7 +131,6 @@ public class selleractivity extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError error) {
                     }
                 });
-                Toast.makeText(this, intentmessage, Toast.LENGTH_SHORT).show();
 
             }
             if(intentmessage.equals("repairgeyser")){
@@ -531,6 +530,32 @@ public class selleractivity extends AppCompatActivity {
                     }
                 });
             }
+
+        if(intentmessage.equals("electrician")){
+            myref.child("providers/electrician").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    loadbar.setVisibility(View.INVISIBLE);
+                    ArrayList<String> sellername = new ArrayList<>();
+                    Iterator<DataSnapshot> items = snapshot.getChildren().iterator();
+                    while (items.hasNext()) {
+                        DataSnapshot item = items.next();
+                        sellerphone.add(item.getKey().toString());
+                        String name = item.child("name").getValue().toString();
+                        sellernames.add(name);
+                        String price = item.child("visitcharge").getValue().toString();
+                        sellerprice.add(price);
+                        String rating = item.child("rating").getValue().toString();
+                        sellerrating.add(rating);
+                    }
+                    adapter();
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                }
+            });
+
         }
     }
     private void adapter(){

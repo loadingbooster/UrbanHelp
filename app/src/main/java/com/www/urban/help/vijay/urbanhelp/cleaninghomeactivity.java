@@ -20,9 +20,9 @@ public class cleaninghomeactivity extends AppCompatActivity {
 
     Button twice,one,mop,dish,cook,book;
 
-    int presscook;
-    int pressmop=0;
-    int pressdish = 0;
+    int cooking;
+    int mopping;
+    int dishing;
     CalendarView calenderhomeclean;
 
     Chip chipcooking,chipdish,chipmopping;
@@ -38,7 +38,6 @@ public class cleaninghomeactivity extends AppCompatActivity {
         chipcooking = findViewById(R.id.chipcooking);
         chipdish = findViewById(R.id.chipdishwashing);
         chipmopping = findViewById(R.id.chipmopping);
-        presscook = 0;
         calenderhomeclean = findViewById(R.id.calendarViewcleaning);
 
 
@@ -71,7 +70,6 @@ public class cleaninghomeactivity extends AppCompatActivity {
         chipcooking.setOnCloseIconClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int cooking;
                 if(chipcooking.isChecked()){
                     cooking = 1;
                 }
@@ -83,7 +81,6 @@ public class cleaninghomeactivity extends AppCompatActivity {
         chipmopping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int mopping=0;
                 if(chipmopping.isChecked()){
                     mopping=1;
                 }
@@ -95,11 +92,10 @@ public class cleaninghomeactivity extends AppCompatActivity {
         chipdish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int dishwashing=0;
                 if(chipdish.isChecked()){
-                    dishwashing=1;
+                    dishing=1;
                 }else {
-                    dishwashing=0;
+                    dishing=0;
                 }
             }
         });
